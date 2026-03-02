@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri - Edu Grafis</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/galeri.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+                <div class="logo">
+                <img src="../images/logo.png" alt="The Vibes Logo" class="logo-img">
+            </div>
+            <div class="nav-wrapper">
+                <nav>
+                    <a href="index.html" class="nav-link">Beranda</a>
+                    <a href="tutorial.html" class="nav-link">Tutorial</a>
+                    <a href="galeri.html" class="nav-link active">Galeri</a>
+                </nav>
+                <button class="sidebar-toggle" id="sidebarToggle">
+                    <span class="hamburger-icon">☰</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h3>Menu</h3>
+            <button class="sidebar-close" id="sidebarClose">&times;</button>
+        </div>
+        <div class="sidebar-content">
+            <ul class="sidebar-menu">
+                <li><a href="tentang.html" class="sidebar-link">Tentang Kami</a></li>
+                <li><a href="#" class="sidebar-link" id="kontakBtn">Kontak</a></li>
+            </ul>
+        </div>
+    </aside>
+
+    <!-- Kontak Modal -->
+    <div class="modal-overlay" id="kontakModal">
+        <div class="modal-content modal-form-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <div class="contact-wrapper">
+                <div class="contact-form-container">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="nama">NAMA:</label>
+                            <input type="text" id="nama" name="nama" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">EMAIL:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="pesan">PESAN:</label>
+                            <textarea id="pesan" name="pesan" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">SUBMIT</button>
+                    </form>
+                </div>
+                
+                <div class="contact-info-container">
+                    <p class="contact-message">Ayo berikan pesan dan kesan terbaikmu lewat form ini, kalimat dari kalian bisa memberi makna besar</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <main class="main-container page-with-bg">
+        <section class="section-content">
+            <h2 class="gallery-title">Canva</h2>
+            <div class="gallery-container">
+                <div class="slider-wrapper">
+                    <div class="slider" id="slider">
+                        <div class="slide"><img src="../images/canva_1.jpeg" alt="Canva Slide 1"></div>
+                        <div class="slide"><img src="../images/canva_2.jpeg" alt="Canva Slide 2"></div>
+                    </div>
+                    <button class="nav-button prev" id="prevBtn">‹</button>
+                    <button class="nav-button next" id="nextBtn">›</button>
+                </div>
+                <div class="caption-container">
+                    <h2 id="caption-title"></h2>
+                    <p id="caption-text"></p>
+                </div>
+                <div class="indicator-dots" id="indicatorDots">
+                    <div class="dot active" data-index="0"></div>
+                    <div class="dot" data-index="1"></div>
+                </div>
+            </div>
+
+            <h2 class="gallery-title">Figma</h2>
+            <div class="gallery-container">
+                <div class="slider-wrapper">
+                    <div class="slider" id="sliderFigma">
+                        <div class="slide"><img src="../images/figma_1.jpeg" alt="Figma Slide 1"></div>
+                        <div class="slide"><img src="../images/figma_2.jpeg" alt="Figma Slide 2"></div>
+                    </div>
+                    <button class="nav-button prev" id="prevBtnFigma">‹</button>
+                    <button class="nav-button next" id="nextBtnFigma">›</button>
+                </div>
+                <div class="caption-container">
+                    <h2 id="caption-title-figma"></h2>
+                    <p id="caption-text-figma"></p>
+                </div>
+                <div class="indicator-dots" id="indicatorDotsFigma">
+                    <div class="dot active" data-index="0"></div>
+                    <div class="dot" data-index="1"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+        <!-- Social Media Footer -->
+    <div class="social-footer">
+        <a href="#" class="social-link">
+            <img src="../images/logo_tiktok.png" alt="TikTok" class="social-icon-img">
+            <span>@thev4ibes_</span>
+        </a>
+        <a href="#" class="social-link">
+            <img src="../images/logo_ig.png" alt="Instagram" class="social-icon-img">
+            <span>@thev4ibes_</span>
+        </a>
+        <a href="#" class="social-link">
+            <img src="../images/logo_x.png" alt="X" class="social-icon-img">
+            <span>@thev4ibes_</span>
+        </a>
+    </div>
+
+    <script src="../js/index.js"></script>
+    <script src="../js/galeri.js"></script>
+</body>
+</html>

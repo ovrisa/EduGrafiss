@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FigJam - Figma (Desktop) - Edu Grafis</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/canva.css">
+</head>
+<body>
+    <!-- Header (same as site header) -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="../images/logo.png" alt="The Vibes Logo" class="logo-img">
+            </div>
+            <div class="nav-wrapper">
+                <nav>
+                    <a href="index.html" class="nav-link">Beranda</a>
+                    <a href="tutorial.html" class="nav-link">Tutorial</a>
+                    <a href="galeri.html" class="nav-link">Galeri</a>
+                </nav>
+                <button type="button" class="sidebar-toggle" id="sidebarToggle" aria-label="Buka menu" aria-expanded="false">
+                    <span class="hamburger-icon">☰</span>
+                </button>
+            </div>
+        </div>
+        
+        <button class="exit-btn" aria-label="Kembali">
+            <div class="arrow" aria-hidden="true"></div>
+        </button>
+    </header>
+
+    <!-- Sidebar -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h3>Menu</h3>
+            <button type="button" class="sidebar-close" id="sidebarClose" aria-label="Tutup menu">&times;</button>
+        </div>
+        <div class="sidebar-content">
+            <ul class="sidebar-menu">
+                <li><a href="tentang.html" class="sidebar-link">Tentang Kami</a></li>
+                <li><a href="#" class="sidebar-link" id="kontakBtn">Kontak</a></li>
+            </ul>
+        </div>
+    </aside>
+
+    <!-- Kontak Modal -->
+    <div class="modal-overlay" id="kontakModal">
+        <div class="modal-content modal-form-content">
+            <button type="button" class="modal-close" id="modalClose" aria-label="Tutup kontak">&times;</button>
+            <div class="contact-wrapper">
+                <div class="contact-form-container">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="nama">NAMA:</label>
+                            <input type="text" id="nama" name="nama" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">EMAIL:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="pesan">PESAN:</label>
+                            <textarea id="pesan" name="pesan" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">SUBMIT</button>
+                    </form>
+                </div>
+                
+                <div class="contact-info-container">
+                    <p class="contact-message">Ayo berikan pesan dan kesan terbaikmu lewat form ini, kalimat dari kalian bisa memberi makna besar</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="main-container page-with-bg">
+        <section class="section-content tutorial-simple">
+            <div class="panel">
+
+                <h1 class="page-heading">📋 FigJam — Desktop</h1>
+                <p>Halaman tutorial desktop untuk membuat brainstorming, flowchart, dan kolaborasi di FigJam. Ikuti langkah-langkah di bawah beserta gambar contoh.</p>
+                <div class="steps">
+                <!-- Desktop section -->
+                <div class="step">
+                    <div><span class="step-num"></span><strong>1. Klik New FigJam File</strong></div>
+                    <div class="step-desc">Mulai file baru di browser atau aplikasi desktop.</div>
+                    <img src="../images/L1figjamfigma.jpeg" alt="New FigJam File" class="step-photo center">
+                </div>
+                <div class="step">
+                    <div><span class="step-num"></span><strong>2. Gunakan Sticky Notes untuk menulis ide</strong></div>
+                    <img src="../images/L2figjamfigma.jpeg" alt="Sticky Notes" class="step-photo center">
+                </div>
+                <div class="step">
+                    <div><span class="step-num"></span><strong>3. Ubah warna dan ukuran sticky sesuai kebutuhan</strong></div>
+                    <img src="../images/L3figjamfigma.jpeg" alt="Ubah Warna Sticky" class="step-photo center">
+                </div>
+                <div class="step">
+                    <div><span class="step-num"></span><strong>4. Tambahkan Shapes seperti kotak, lingkaran, panah</strong></div>
+                    <img src="../images/L4figjamfigma.jpeg" alt="Tambahkan Shapes" class="step-photo center">
+                </div>
+                <div class="step">
+                    <div><span class="step-num"></span><strong>5. Tekan T untuk menambahkan teks tambahan</strong></div>
+                    <img src="../images/L5figjamfigma.jpeg" alt="Tambah Teks" class="step-photo center">
+                </div>
+                  <div class="step">
+                    <div><span class="step-num"></span><strong>6. Atur ukuran dan style teks di panel kanan.</strong></div>
+                    <img src="../images/L6figjamfigma.jpeg" alt="Atur Teks" class="step-photo center">
+                </div>
+                <div class="step">
+                    <div><span class="step-num"></span><strong>7. Gunakan menu manage widgets untuk menambahkan setiker atau emoji</strong></div>
+                    <img src="../images/L7figjamfigma.jpeg" alt="Manage Widgets" class="step-photo center">
+                </div>
+                <div class="step">
+                    <div><span class="step-num"></span><strong>8. Klik Share untuk kolaborasi real time</strong></div>
+                    <img src="../images/L8figjamfigma.jpeg" alt="Share" class="step-photo center">
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="social-footer">
+        <a href="#" class="social-link"><img src="../images/logo_tiktok.png" alt="TikTok" class="social-icon-img"><span>@thev4ibes_</span></a>
+        <a href="#" class="social-link"><img src="../images/logo_ig.png" alt="Instagram" class="social-icon-img"><span>@thev4ibes_</span></a>
+        <a href="#" class="social-link"><img src="../images/logo_x.png" alt="X" class="social-icon-img"><span>@thev4ibes_</span></a>
+    </div>
+
+    <script src="../js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentasi - Canva (Mobile) - Edu Grafis</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/canva.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo"><img src="../images/logo.png" alt="The Vibes Logo" class="logo-img"></div>
+            <div class="nav-wrapper">
+                <nav>
+                    <a href="index.html" class="nav-link">Beranda</a>
+                    <a href="tutorial.html" class="nav-link active">Tutorial</a>
+                    <a href="galeri.html" class="nav-link">Galeri</a>
+                </nav>
+                <button class="sidebar-toggle" id="sidebarToggle">
+                    <span class="hamburger-icon">☰</span>
+                </button>
+            </div>
+        </div>
+        <button class="exit-btn" aria-label="Kembali">
+            <div class="arrow" aria-hidden="true"></div>
+        </button>
+    </header>
+
+    <!-- Sidebar -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h3>Menu</h3>
+            <button class="sidebar-close" id="sidebarClose">&times;</button>
+        </div>
+        <div class="sidebar-content">
+            <ul class="sidebar-menu">
+                <li><a href="tentang.html" class="sidebar-link">Tentang Kami</a></li>
+                <li><a href="#" class="sidebar-link" id="kontakBtn">Kontak</a></li>
+            </ul>
+        </div>
+    </aside>
+
+    <!-- Kontak Modal -->
+    <div class="modal-overlay" id="kontakModal">
+        <div class="modal-content modal-form-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <div class="contact-wrapper">
+                <div class="contact-form-container">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="nama">NAMA:</label>
+                            <input type="text" id="nama" name="nama" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">EMAIL:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="pesan">PESAN:</label>
+                            <textarea id="pesan" name="pesan" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">SUBMIT</button>
+                    </form>
+                </div>
+                
+                <div class="contact-info-container">
+                    <p class="contact-message">Ayo berikan pesan dan kesan terbaikmu lewat form ini, kalimat dari kalian bisa memberi makna besar</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="main-container page-with-bg">
+        <section class="section-content tutorial-simple">
+            <div class="panel">
+                <h1 class="page-heading">📊 Presentasi — Mobile</h1>
+                <p>📱 Cara membuat presentasi di Canva mobile. Ikuti langkah berikut untuk mulai dari membuka aplikasi sampai menampilkan atau mengunduh hasil.</p>
+                <div class="steps">
+                <div class="step">
+                    <div><span class="step-num"></span><strong>1. Buka Aplikasi Canva</strong></div>
+                    <img src="../images/buka_canva.jpeg" alt="Buka Aplikasi" class="step-photo small">
+                    <div class="step-desc">Login akun.</div>
+                </div>
+
+                <div class="step">
+                    <div><span class="step-num"></span><strong>2. Pilih Presentation (16:9) &amp; Template</strong></div>
+                    <img src="../images/L2presentasicanvamobile.jpeg" alt="Pilih Presentation" class="step-photo small">
+                    <div class="step-desc">Tap template yang diinginkan.</div>
+                </div>
+
+                <div class="step">
+                    <div><span class="step-num"></span><strong>3.Edit Teks</strong></div>
+                    <img src="../images/L3presentasicanvamobile.jpeg" alt="Edit Teks" class="step-photo small">
+                    <div class="step-desc">Tap teks → edit isi, font, warna di menu bawah.</div>
+                </div>
+
+                <div class="step">
+                    <div><span class="step-num"></span><strong>4. Ganti Gambar</strong></div>
+                    <img src="../images/L4presentasicanvamobile.jpeg" alt="Ganti Gambar" class="step-photo small">
+                    <div class="step-desc">Tap unggahan → pilih unggah file → ambil dari galeri atau Canva.</div>
+                </div>
+
+                <div class="step">
+                    <div><span class="step-num"></span><strong>5. Tambah Elemen</strong></div>
+                    <img src="../images/L5presentasicanvamobilenew.jpeg" alt="Tambah Elemen" class="step-photo">
+                    <div class="step-desc">Tekan tombol + → pilih Elements, Text, Uploads, Photos.</div>
+                </div>
+
+                <div class="step">
+                    <div><span class="step-num"></span><strong>6. Presentasi atau Download</strong></div>
+                    <img src="../images/downloadmobilecanva.jpeg" alt="Present atau Download" class="step-photo small">
+                    <div class="step-desc">Tap Present untuk langsung tampil atau Share → Download.</div>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+    <div class="social-footer"><a href="#" class="social-link"><img src="../images/logo_tiktok.png" alt="TikTok" class="social-icon-img"><span>@thev4ibes_</span></a><a href="#" class="social-link"><img src="../images/logo_ig.png" alt="Instagram" class="social-icon-img"><span>@thev4ibes_</span></a><a href="#" class="social-link"><img src="../images/logo_x.png" alt="X" class="social-icon-img"><span>@thev4ibes_</span></a></div>
+    <script src="../js/index.js"></script>
+</body>
+</html>

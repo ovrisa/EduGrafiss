@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canva - Edu Grafis</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/canva.css">
+    <link rel="stylesheet" href="../css/canva-inline.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="../images/logo.png" alt="The Vibes Logo" class="logo-img">
+            </div>
+            <div class="nav-wrapper">
+                <nav>
+                    <a href="index.html" class="nav-link">Beranda</a>
+                    <a href="tutorial.html" class="nav-link">Tutorial</a>
+                    <a href="galeri.html" class="nav-link">Galeri</a>
+                </nav>
+                <button class="sidebar-toggle" id="sidebarToggle">
+                    <span class="hamburger-icon">☰</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h3>Menu</h3>
+            <button class="sidebar-close" id="sidebarClose">&times;</button>
+        </div>
+        <div class="sidebar-content">
+            <ul class="sidebar-menu">
+                <li><a href="tentang.html" class="sidebar-link">Tentang Kami</a></li>
+                <li><a href="#" class="sidebar-link" id="kontakBtn">Kontak</a></li>
+            </ul>
+        </div>
+    </aside>
+
+    <!-- Kontak Modal Form -->
+    <div class="modal-overlay" id="kontakModal">
+        <div class="modal-content modal-form-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <div class="contact-wrapper">
+                <div class="contact-form-container">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="nama">NAMA:</label>
+                            <input type="text" id="nama" name="nama" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">EMAIL:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="pesan">PESAN:</label>
+                            <textarea id="pesan" name="pesan" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">SUBMIT</button>
+                    </form>
+                </div>
+                
+                <div class="contact-info-container">
+                    <p class="contact-message">Ayo berikan pesan dan kesan terbaikmu lewat form ini, kalimat dari kalian bisa memberi makna besar</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <main class="main-container page-with-bg">
+        <section class="section-content platform-content">
+            <div class="platform-header-wrapper">
+                <button class="exit-btn"><div class="arrow"></div></button>
+                <div class="platform-header">
+                    <img src="../images/logo_canva.png" alt="Canva" class="platform-logo">
+                    <h2>Canva</h2>
+                </div>
+            </div>
+            
+            <div class="platform-description">
+                <p>Canva adalah platform desain grafis online yang mudah digunakan oleh pemula maupun professional. Dengan fitur drag-and-drop dan banyak template siap pakai, pengguna bisa membuat berbagai desain seperti poster, presentasi, logo, dan infografis dengan cepat. Untuk mulai mengedit, cukup pilih jenis proyek dan kategori desain yang sesuai melalui menu template. Pemilihan kategori yang tepat membantu proses editing menjadi lebih efisien dan menghasilkan desain yang maksimal.</p>
+            </div>
+
+            <!-- moved inline styles to css/canva-inline.css -->
+
+            <div class="grid-wrapper">
+                <div class="card-grid">
+                    <div class="card" id="card-poster" onclick="expandCard('poster')">
+                        <div class="card-front">
+                            <div class="card-icon">📄</div>
+                            <div class="card-title">Poster</div>
+                        </div>
+                        <div class="card-expanded">
+                            <div class="exp-title">Poster</div>
+                            <div class="exp-desc">Silakan pilih tampilan yang ingin Anda gunakan.</div>
+                            <div class="exp-options">
+                                <button class="opt-btn" onclick="goToPage(event,'poster','desktop')"><span class="opt-icon">🖥️</span> Desktop</button>
+                                <button class="opt-btn" onclick="goToPage(event,'poster','mobile')"><span class="opt-icon">📱</span> Mobile</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card" id="card-presentasi" onclick="expandCard('presentasi')">
+                        <div class="card-front">
+                            <div class="card-icon">📊</div>
+                            <div class="card-title">Presentasi</div>
+                        </div>
+                        <div class="card-expanded">
+                            <div class="exp-title">Presentasi</div>
+                            <div class="exp-desc">Silakan pilih tampilan yang ingin Anda gunakan.</div>
+                            <div class="exp-options">
+                                <button class="opt-btn" onclick="goToPage(event,'presentasi','desktop')"><span class="opt-icon">🖥️</span> Desktop</button>
+                                <button class="opt-btn" onclick="goToPage(event,'presentasi','mobile')"><span class="opt-icon">📱</span> Mobile</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card" id="card-logo" onclick="expandCard('logo')">
+                        <div class="card-front">
+                            <div class="card-icon">💡</div>
+                            <div class="card-title">Logo</div>
+                        </div>
+                        <div class="card-expanded">
+                            <div class="exp-title">Logo</div>
+                            <div class="exp-desc">Silakan pilih tampilan yang ingin Anda gunakan.</div>
+                            <div class="exp-options">
+                                <button class="opt-btn" onclick="goToPage(event,'logo','desktop')"><span class="opt-icon">🖥️</span> Desktop</button>
+                                <button class="opt-btn" onclick="goToPage(event,'logo','mobile')"><span class="opt-icon">📱</span> Mobile</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card" id="card-infografis" onclick="expandCard('infografis')">
+                        <div class="card-front">
+                            <div class="card-icon">📈</div>
+                            <div class="card-title">Infografis</div>
+                        </div>
+                        <div class="card-expanded">
+                            <div class="exp-title">Infografis</div>
+                            <div class="exp-desc">Silakan pilih tampilan yang ingin Anda gunakan.</div>
+                            <div class="exp-options">
+                                <button class="opt-btn" onclick="goToPage(event,'infografis','desktop')"><span class="opt-icon">🖥️</span> Desktop</button>
+                                <button class="opt-btn" onclick="goToPage(event,'infografis','mobile')"><span class="opt-icon">📱</span> Mobile</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page-content" id="pageContent">
+                <div class="page-inner" id="pageInner"></div>
+            </div>
+
+            <!-- moved inline script to js/canva-inline.js -->
+
+            <!-- Tutorial Menu -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Social Media Footer -->
+    <div class="social-footer">
+        <a href="#" class="social-link">
+            <img src="../images/logo_tiktok.png" alt="TikTok" class="social-icon-img">
+            <span>@thev4ibes_</span>
+        </a>
+        <a href="#" class="social-link">
+            <img src="../images/logo_ig.png" alt="Instagram" class="social-icon-img">
+            <span>@thev4ibes_</span>
+        </a>
+        <a href="#" class="social-link">
+            <img src="../images/logo_x.png" alt="X" class="social-icon-img">
+            <span>@thev4ibes_</span>
+        </a>
+    </div>
+
+    <script src="../js/index.js"></script>
+    <script src="../js/canva.js"></script>
+    <script src="../js/canva-inline.js"></script>
+    <!-- small exit handler moved into canva-inline.js -->
+</body>
+</html>

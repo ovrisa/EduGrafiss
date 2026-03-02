@@ -1,0 +1,107 @@
+/* Kontak page styles */
+
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.contact-form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-group label {
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 12px 15px;
+    border: none;
+    background-color: #d4b5e0;
+    border-radius: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    background-color: #c89fd4;
+    transform: scale(1.02);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.submit-btn {
+    padding: 12px 40px;
+    background: linear-gradient(135deg, #9b7ab8 0%, #7d5fa1 100%);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    align-self: center;
+    margin-top: 15px;
+    box-shadow: 0 4px 15px rgba(155, 122, 184, 0.3);
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(155, 122, 184, 0.4);
+}
+
+.contact-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-message {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    font-weight: 500;
+    text-align: right;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 20px;
+    }
+    
+    .contact-message {
+        text-align: left;
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,231 @@
+/* Figma page styles */
+
+.platform-header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.exit-btn {
+    position: fixed;
+    top: 100px;
+    left: 100px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: white;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: #333;
+    font-size: 0;
+    z-index: 100;
+}
+
+.exit-btn:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    transform: scale(1.05);
+}
+
+.exit-btn:active {
+    transform: scale(0.95);
+}
+
+.arrow {
+    width: 12px;
+    height: 12px;
+    border-left: 3px solid #333;
+    border-bottom: 3px solid #333;
+    transform: rotate(45deg);
+    margin-right: -3px;
+}
+
+.platform-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.platform-logo {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.platform-header h2 {
+    font-size: 48px;
+    color: #333;
+    margin: 0;
+    font-weight: 900;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+}
+
+.platform-description {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.1);
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.platform-description p {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: justify;
+    margin: 0;
+}
+
+.platform-options {
+    margin-top: 60px;
+}
+
+.options-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.option-item {
+    background: rgba(255, 255, 255, 0.96);
+    padding: 50px 36px;
+    border-radius: 22px;
+    text-align: center;
+    box-shadow: 0 6px 28px rgba(0, 0, 0, 0.12);
+    transition: all 0.28s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 240px;
+}
+
+.option-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(149, 117, 205, 0.3);
+    background: linear-gradient(135deg, rgba(149, 117, 205, 0.1) 0%, rgba(126, 87, 194, 0.1) 100%);
+}
+
+.option-icon {
+    font-size: 64px;
+    margin-bottom: 18px;
+    display: block;
+}
+
+.option-item h4 {
+    color: #333;
+    font-size: 20px;
+    margin: 0 0 6px 0;
+    font-weight: 800;
+}
+
+.option-item p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.option-item-link {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    gap: 12px;
+}
+
+.option-description {
+    display: none;
+    color: #666;
+    font-size: 13px;
+    line-height: 1.6;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.option-item.active {
+    background: linear-gradient(135deg, rgba(195, 154, 237, 0.7) 0%, rgba(183, 139, 226, 0.7) 100%);
+    box-shadow: 0 15px 40px rgba(149, 117, 205, 0.4);
+    transform: translateY(-8px);
+}
+
+.option-item.active h4,
+.option-item.active p,
+.option-item.active .option-description {
+    color: #333;
+}
+
+.option-item.active .option-description {
+    display: block;
+    border-top-color: rgba(255, 255, 255, 0.3);
+}
+
+.tutorial-section {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    .options-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+/* Figma Design Page Styles */
+.figma-design-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 60px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+}
+
+.figma-design-content h2 {
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.figma-design-content h2:first-of-type {
+    margin-top: 0;
+}
+
+.figma-design-content p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 0 0 25px 20px;
+    text-align: left;
+}

@@ -1,0 +1,164 @@
+/* Gallery specific styles (kept minimal; index.css provides site background/header/footer) */
+
+* {
+    box-sizing: border-box;
+}
+
+.gallery-container {
+    max-width: 760px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 16px;
+    box-shadow: 0 14px 40px rgba(255, 255, 255, 0.15);
+    overflow: hidden;
+    margin: 20px auto 40px;
+}
+
+.gallery-title {
+    text-align: center;
+    font-size: 72px;
+    color: #ffffff !important;
+    margin: 24px auto 12px auto;
+    max-width: 760px;
+    font-weight: 900;
+    line-height: 1;
+    /* white core with clean black outline (no grey shadow) */
+    -webkit-text-stroke: 1px #000;
+    text-shadow: none;
+}
+
+/* Make the Canva and Figma gallery titles plain white without stroke/shadow */
+.gallery-title:first-of-type,
+.gallery-title:last-of-type {
+    color: #ffffff !important;
+    -webkit-text-stroke: 0 !important;
+    text-shadow: none !important;
+}
+
+.slider-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.45s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    max-height: 450px;
+    max-width: 85%;
+    object-fit: contain;
+    display: block;
+    padding: 0 30px;
+}
+
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.95);
+    border: none;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+    z-index: 20;
+}
+
+.nav-button:hover {
+    background: #d4b5e8;
+    color: #fff;
+    transform: translateY(-50%) scale(1.08);
+}
+
+.prev {
+    left: 14px;
+}
+
+.next {
+    right: 14px;
+}
+
+.caption-container {
+    padding: 18px 20px;
+    background: transparent;
+    text-align: center;
+}
+
+.caption-container h2 {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+.caption-container p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.indicator-dots {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 0 20px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #e0d9e8;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.dot.active {
+    background: #9575cd;
+    width: 26px;
+    border-radius: 6px;
+}
+
+@media (max-width: 768px) {
+    .gallery-container {
+        margin: 100px 16px 30px;
+    }
+    .gallery-title {
+        font-size: 44px;
+    }
+    .slide img {
+        max-height: 360px;
+        padding: 0 20px;
+        max-width: 90%;
+    }
+    .nav-button {
+        width: 48px;
+        height: 48px;
+        font-size: 20px;
+    }
+    .caption-container h2 {
+        font-size: 18px;
+    }
+    .caption-container p {
+        font-size: 13px;
+    }
+}

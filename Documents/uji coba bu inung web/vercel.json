@@ -1,5 +1,9 @@
 {
   "rewrites": [
+    { "source": "/tutorial.html", "destination": "/html/tutorial.html" },
+    { "source": "/galeri.html", "destination": "/html/galeri.html" },
+    { "source": "/tentang.html", "destination": "/html/tentang.html" },
+    { "source": "/kontak.html", "destination": "/html/kontak.html" },
     { "source": "/", "destination": "/html/index.html" }
   ]
 }

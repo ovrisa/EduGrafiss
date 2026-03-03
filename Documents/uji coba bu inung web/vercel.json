@@ -1,32 +1,5 @@
 {
   "rewrites": [
-    { "source": "/index.html", "destination": "/html/index.html" },
-    { "source": "/tutorial.html", "destination": "/html/tutorial.html" },
-    {
-      "rewrites": [
-        { "source": "/", "destination": "/html/index.html" },
-        { "source": "/index.html", "destination": "/html/index.html" },
-        { "source": "/tutorial.html", "destination": "/html/tutorial.html" },
-        { "source": "/galeri.html", "destination": "/html/galeri.html" },
-        { "source": "/tentang.html", "destination": "/html/tentang.html" },
-        { "source": "/kontak.html", "destination": "/html/kontak.html" },
-        { "source": "/canva.html", "destination": "/html/canva.html" },
-        { "source": "/figma.html", "destination": "/html/figma.html" },
-        { "source": "/canva-poster.html", "destination": "/html/canva-poster.html" },
-        { "source": "/canva-poster-desktop.html", "destination": "/html/canva-poster-desktop.html" },
-        { "source": "/canva-poster-mobile.html", "destination": "/html/canva-poster-mobile.html" },
-        { "source": "/canva-logo.html", "destination": "/html/canva-logo.html" },
-        { "source": "/canva-logo-desktop.html", "destination": "/html/canva-logo-desktop.html" },
-        { "source": "/canva-logo-mobile.html", "destination": "/html/canva-logo-mobile.html" },
-        { "source": "/canva-infografis.html", "destination": "/html/canva-infografis.html" },
-        { "source": "/canva-infografis-desktop.html", "destination": "/html/canva-infografis-desktop.html" },
-        { "source": "/canva-infografis-mobile.html", "destination": "/html/canva-infografis-mobile.html" },
-        { "source": "/canva-presentasi-desktop.html", "destination": "/html/canva-presentasi-desktop.html" },
-        { "source": "/figma-design.html", "destination": "/html/figma-design.html" },
-        { "source": "/figma-jam.html", "destination": "/html/figma-jam.html" },
-        { "source": "/figma-site.html", "destination": "/html/figma-site.html" },
-        { "source": "/figma-slides.html", "destination": "/html/figma-slides.html" }
-      ]
-    }
-  ]
+    { "source": "/", "destination": "/html/index.html" }
+]
 }
